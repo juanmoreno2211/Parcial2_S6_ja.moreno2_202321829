@@ -3,6 +3,10 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AirlineModule } from './airline/airline.module';
+import { Flight } from './flight/flight';
+import { FlightModule } from './flight/flight.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AirlineModule,
+    FlightModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

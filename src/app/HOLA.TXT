@@ -1,0 +1,7 @@
+Generar el módulo
+
+Borrar el componente .component
+
+Agregar el módulo al app.module.ts en imports
+
+Crear componente de listar
